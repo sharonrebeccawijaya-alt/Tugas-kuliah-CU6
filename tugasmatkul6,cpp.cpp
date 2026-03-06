@@ -23,7 +23,7 @@ public:
         head = NULL;
     }
 
-    // Insert FIRST
+    // Insert first
     void insertFirst(int value) {
         Node* newNode = new Node(value);
 
@@ -35,7 +35,7 @@ public:
         head = newNode;
     }
 
-    // Insert LAST
+    // Insert last
     void insertLast(int value) {
         Node* newNode = new Node(value);
 
@@ -53,7 +53,7 @@ public:
         newNode->prev = temp;
     }
 
-    // Insert NEXT
+    // Insert next
     void insertNext(int prevData, int value) {
         Node* temp = head;
 
@@ -78,7 +78,7 @@ public:
         cout << "Node tidak ditemukan" << endl;
     }
 
-    // DELETE FIRST NODE
+    // delete first
     void deleteFirst() {
         if (head == NULL) return;
 
@@ -92,7 +92,7 @@ public:
         delete temp;
     }
 
-    // DELETE LAST
+    // delete last
     void deleteLast() {
         if (head == NULL) return;
 
@@ -139,7 +139,7 @@ public:
         cout << "Node tidak ditemukan" << endl;
     }
 
-    
+    // Tampilkan data
     void display() {
         Node* temp = head;
 
